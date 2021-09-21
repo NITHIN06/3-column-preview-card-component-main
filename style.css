@@ -94,6 +94,9 @@ button:hover{
     .cards{
         flex-direction: column;
     }
+    .card{
+        width: 10rem
+    }
     .orange{
         border-radius: 10px 10px 0 0;
     }
