@@ -4,7 +4,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .cards{
@@ -78,7 +78,23 @@ button:hover{
     border: white solid 2px;
 }
 @media (max-width:970px) {
+    body{
+        padding: 50px 0 50px 0;
+        text-align: center;
+    }
+    .cards{
+        margin: auto;
+        text-align:left;
+    }
+}
+@media (max-width:750px) {
     .cards{
         flex-direction: column;
+    }
+    .orange{
+        border-radius: 10px 10px 0 0;
+    }
+    .green{
+        border-radius: 0 0 10px 10px;
     }
 }
