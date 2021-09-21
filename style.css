@@ -16,8 +16,8 @@ body{
 }
 .card{
     padding: 60px;
-    width: 12.5rem;
-    height: 25rem;
+    min-width: 12.5rem;
+    min-height: 25rem;
 }
 .orange{
     background-color: #e28525;
@@ -95,7 +95,7 @@ button:hover{
         flex-direction: column;
     }
     .card{
-        width: 10rem
+        min-width: 10rem
     }
     .orange{
         border-radius: 10px 10px 0 0;
