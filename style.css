@@ -88,6 +88,9 @@ button:hover{
     }
 }
 @media (max-width:750px) {
+    p{
+        margin-bottom: 50px;
+    }
     .cards{
         flex-direction: column;
     }
