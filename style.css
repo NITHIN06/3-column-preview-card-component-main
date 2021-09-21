@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cards{
+    display: flex;
+    width: min-content;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.card{
+    padding: 60px;
+    width: 12.5rem;
+    height: 25rem;
+}
+.orange{
+    background-color: #e28525;
+    border-radius: 10px 0 0 10px;
+}
+.blue{
+    background-color: #016972;
+}
+.green{
+    background-color: #00403f;
+    border-radius: 0 10px 10px 0;
+}
+h1{
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+p{
+    font-size: 1rem;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.781);
+    line-height:2;
+    margin-bottom: 80px;
+}
+button{
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #fff;
+    border-radius: 50px;
+    border: none;
+}
+button:hover{
+    color: white;
+    border: white solid 2px;
+}
+.blue>button{
+    color: #016972;
+}
+.blue>button:hover{
+    background-color: #016972;
+    color: white;
+    border: white solid 2px;
+}
+.orange>button{
+    color: #e28525;
+}
+.orange>button:hover{
+    background-color: #e28525;
+    color: white;
+    border: white solid 2px;
+}
+.green>button{
+    color: #00403f;
+}
+.green>button:hover{
+    background-color: #00403f;
+    color: white;
+    border: white solid 2px;
+}
+@media (max-width:970px) {
+    .cards{
+        flex-direction: column;
+    }
+}
