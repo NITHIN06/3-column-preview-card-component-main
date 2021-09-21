@@ -96,7 +96,7 @@ button:hover{
     }
     .card{
         min-width: 10rem;
-        padding: 30px;
+        padding: 30px 60px;
     }
     .orange{
         border-radius: 10px 10px 0 0;
