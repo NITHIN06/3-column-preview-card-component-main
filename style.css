@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 body{
     margin: 0;
     display: flex;
@@ -6,18 +8,21 @@ body{
     flex-direction: column;
     min-height: 100vh;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
 .cards{
     display: flex;
-    width: min-content;
+    flex-direction: row;
+    flex-wrap: wrap;
     color: #fff;
     border-radius: 10px;
     margin-bottom: 10px;
+    text-align: left;
 }
 .card{
     padding: 60px;
-    min-width: 12.5rem;
-    min-height: 25rem;
+    width: 12.5rem;
+    height: 23rem;
 }
 .orange{
     background-color: #e28525;
@@ -31,15 +36,16 @@ body{
     border-radius: 0 10px 10px 0;
 }
 h1{
+    font-family: 'Big Shoulders Display', sans-serif;
     font-size: 2.25rem;
     text-transform: uppercase;
 }
 p{
-    font-size: 1rem;
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgba(255, 255, 255, 0.781);
+    font-size: 0.93rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 100%, 0.75);
     line-height:2;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 button{
     padding: 15px 20px;
@@ -47,11 +53,12 @@ button{
     font-weight: 400;
     background-color: #fff;
     border-radius: 50px;
-    border: none;
+    border: white solid 2px;
 }
 button:hover{
     color: white;
     border: white solid 2px;
+    cursor: pointer;
 }
 .blue>button{
     color: #016972;
@@ -77,14 +84,27 @@ button:hover{
     color: white;
     border: white solid 2px;
 }
-@media (max-width:970px) {
+@media (max-width:959px) {
     body{
-        padding: 50px 0 50px 0;
-        text-align: center;
+        padding-top: 20px;
     }
-    .cards{
+    .card{
         margin: auto;
-        text-align:left;
+    }
+    .orange{
+        margin-right: 0;
+    }
+    .blue{
+        margin-left: 0;
+    }
+    .blue{
+        border-radius: 0 10px 10px 0;
+    }
+    .green{
+        border-radius: 0 0 10px 10px;
+    }
+    p{
+        margin-bottom: 60px;
     }
 }
 @media (max-width:750px) {
@@ -100,6 +120,9 @@ button:hover{
     }
     .orange{
         border-radius: 10px 10px 0 0;
+    }
+    .blue{
+        border-radius: 0;
     }
     .green{
         border-radius: 0 0 10px 10px;
