@@ -115,7 +115,8 @@ button:hover{
         flex-direction: column;
     }
     .card{
-        min-width: 10rem;
+        width: 10rem;
+        min-height: 23.5rem;
         padding: 30px 60px;
     }
     .orange{
