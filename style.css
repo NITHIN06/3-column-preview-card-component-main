@@ -22,7 +22,7 @@ body{
 .card{
     padding: 60px;
     width: 12.5rem;
-    height: 23rem;
+    min-height: 23rem;
 }
 .orange{
     background-color: #e28525;
